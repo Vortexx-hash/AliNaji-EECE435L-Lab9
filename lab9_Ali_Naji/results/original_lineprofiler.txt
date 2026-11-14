@@ -1,0 +1,47 @@
+Project: lab9_Ali_Naji
+Version: original
+Working directory: C:\Users\AliNaji\Desktop\EECE435L\Lab9\lab9_Ali_Naji\original
+Run started: 2026-11-14T22:16:49.722560+02:00
+Command: python profiler_lineprofiler.py
+
+Timer unit: 1e-07 s
+
+Total time: 2.02509 s
+File: C:\Users\AliNaji\Desktop\EECE435L\Lab9\lab9_Ali_Naji\original\profiler.py
+Function: slow_function at line 6
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     6                                           def slow_function():
+     7         1   20038856.0    2e+07     99.0      time.sleep(2)
+     8         1         10.0     10.0      0.0      total = 0
+     9     10001      46302.0      4.6      0.2      for i in range(10000):
+    10     10000     165725.0     16.6      0.8          total += i ** 2
+    11         1         16.0     16.0      0.0      return total
+
+Total time: 0.0002309 s
+File: C:\Users\AliNaji\Desktop\EECE435L\Lab9\lab9_Ali_Naji\original\profiler.py
+Function: fast_function at line 14
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    14                                           def fast_function():
+    15         1         18.0     18.0      0.8      total = 0
+    16       101        529.0      5.2     22.9      for i in range(100):
+    17       100       1756.0     17.6     76.1          total += i ** 2
+    18         1          6.0      6.0      0.3      return total
+
+Total time: 10.1937 s
+File: C:\Users\AliNaji\Desktop\EECE435L\Lab9\lab9_Ali_Naji\original\profiler.py
+Function: memory_intensive_function at line 21
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    21                                           def memory_intensive_function():
+    22         1         10.0     10.0      0.0      total = 0
+    23  10000001   24793235.0      2.5     24.3      for i in range(10000000):
+    24  10000000   77143849.0      7.7     75.7          total += i ** 2
+    25         1          8.0      8.0      0.0      return total
+
+
+Exit code: 0

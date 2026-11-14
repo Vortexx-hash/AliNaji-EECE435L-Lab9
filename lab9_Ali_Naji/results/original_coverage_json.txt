@@ -1,0 +1,9 @@
+Project: lab9_Ali_Naji
+Version: original
+Working directory: C:\Users\AliNaji\Desktop\EECE435L\Lab9\lab9_Ali_Naji\original
+Run started: 2026-11-14T22:17:31.028493+02:00
+Command: python -m coverage json -o coverage.json
+
+Wrote JSON report to coverage.json
+
+Exit code: 0

@@ -1,0 +1,17 @@
+{
+  "source": "Values transcribed from the 16 PNG screenshots in evidence; earlier text logs record separate runs.",
+  "original": {
+    "cprofile": {"total_seconds": 3.585, "large_loop_self_seconds": 1.577, "sleep_self_seconds": 2.000},
+    "lineprofiler": {"slow_seconds": 2.00191, "fast_seconds": 0.0000311, "large_loop_seconds": 3.21234, "large_loop_body_percent": 78.9},
+    "memoryprofiler": {"slow_peak_mib": 22.9, "fast_peak_mib": 22.9, "large_loop_peak_mib": 23.0},
+    "tests": {"passed": 4, "suite_seconds": 3.611, "large_loop_seconds": 1.558585, "memory_before_mib": 23.680, "memory_after_mib": 23.684, "five_second_target_met": true},
+    "coverage": {"display_percent": 94, "statements": 23, "missing_lines": [35], "branches": 8}
+  },
+  "optimized": {
+    "cprofile": {"total_seconds": 3.574, "large_loop_self_seconds": 1.564, "sleep_self_seconds": 2.008},
+    "lineprofiler": {"slow_seconds": 2.02502, "fast_seconds": 0.0000017, "large_loop_seconds": 3.13548, "large_loop_body_percent": 79.0},
+    "memoryprofiler": {"slow_peak_mib": 22.8, "fast_peak_mib": 22.8, "large_loop_peak_mib": 22.9},
+    "tests": {"passed": 4, "suite_seconds": 3.633, "large_loop_seconds": 1.566672, "memory_before_mib": 23.730, "memory_after_mib": 23.734, "five_second_target_met": true},
+    "coverage": {"display_percent": 93, "statements": 21, "missing_lines": [34], "branches": 6}
+  }
+}

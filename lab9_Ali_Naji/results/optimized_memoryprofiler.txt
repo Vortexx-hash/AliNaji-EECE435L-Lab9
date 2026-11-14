@@ -1,0 +1,43 @@
+Project: lab9_Ali_Naji
+Version: optimized
+Working directory: C:\Users\AliNaji\Desktop\EECE435L\Lab9\lab9_Ali_Naji\optimized
+Run started: 2026-11-14T22:20:06.365954+02:00
+Command: python -m memory_profiler profiler_memoryprofiler.py
+
+Filename: profiler_memoryprofiler.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+     7     23.1 MiB     23.1 MiB           1   @profile
+     8                                         def slow_function():
+     9     23.1 MiB      0.0 MiB           1       time.sleep(2)
+    10     23.1 MiB      0.0 MiB           1       total = 0
+    11     23.1 MiB      0.0 MiB       10001       for i in range(10000):
+    12     23.1 MiB      0.0 MiB       10000           total += i ** 2
+    13     23.1 MiB      0.0 MiB           1       return total
+
+
+Filename: profiler_memoryprofiler.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    16     23.1 MiB     23.1 MiB           1   @profile
+    17                                         def optimized_fast_function():
+    18     23.1 MiB      0.0 MiB           1       n = 100
+    19     23.1 MiB      0.0 MiB           1       return n * (n - 1) * (2 * n - 1) // 6
+
+
+Filename: profiler_memoryprofiler.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    22     23.1 MiB     23.1 MiB           1   @profile
+    23                                         def memory_intensive_function():
+    24     23.1 MiB      0.0 MiB           1       total = 0
+    25     23.2 MiB -319441.5 MiB    10000001       for i in range(10000000):
+    26     23.2 MiB -319441.6 MiB    10000000           total += i ** 2
+    27     23.2 MiB     -0.0 MiB           1       return total
+
+
+
+Exit code: 0

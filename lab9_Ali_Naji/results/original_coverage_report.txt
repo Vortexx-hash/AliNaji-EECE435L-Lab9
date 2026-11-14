@@ -1,0 +1,13 @@
+Project: lab9_Ali_Naji
+Version: original
+Working directory: C:\Users\AliNaji\Desktop\EECE435L\Lab9\lab9_Ali_Naji\original
+Run started: 2026-11-14T22:17:29.627953+02:00
+Command: python -m coverage report -m
+
+Name          Stmts   Miss Branch BrPart  Cover   Missing
+---------------------------------------------------------
+profiler.py      23      1      8      1    94%   35
+---------------------------------------------------------
+TOTAL            23      1      8      1    94%
+
+Exit code: 0

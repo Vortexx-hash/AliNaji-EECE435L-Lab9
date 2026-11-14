@@ -1,0 +1,22 @@
+Project: lab9_Ali_Naji
+Version: original
+Working directory: C:\Users\AliNaji\Desktop\EECE435L\Lab9\lab9_Ali_Naji\original
+Run started: 2026-11-14T22:17:13.317894+02:00
+Command: python -m coverage run -m unittest discover -v
+
+test_fast_function (test_profiler.TestProfiler) ... fast_function executed in 0.000069000 seconds.
+ok
+test_main_calls_all_functions (test_profiler.TestProfiler) ... ok
+test_memory_intensive_function (test_profiler.TestProfiler) ... memory_intensive_function executed in 13.054840 seconds.
+Memory before: 28.488 MiB; after: 28.492 MiB; change: +0.004 MiB.
+Handout 5 second performance target met: False
+ok
+test_slow_function (test_profiler.TestProfiler) ... slow_function executed in 2.027083 seconds.
+ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 15.109s
+
+OK
+
+Exit code: 0

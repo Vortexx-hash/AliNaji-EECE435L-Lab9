@@ -1,0 +1,9 @@
+Project: lab9_Ali_Naji
+Version: original
+Working directory: C:\Users\AliNaji\Desktop\EECE435L\Lab9\lab9_Ali_Naji\original
+Run started: 2026-11-14T22:17:30.253496+02:00
+Command: python -m coverage html
+
+Wrote HTML report to htmlcov\index.html
+
+Exit code: 0

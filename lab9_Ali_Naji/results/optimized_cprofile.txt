@@ -1,0 +1,23 @@
+Project: lab9_Ali_Naji
+Version: optimized
+Working directory: C:\Users\AliNaji\Desktop\EECE435L\Lab9\lab9_Ali_Naji\optimized
+Run started: 2026-11-14T22:17:31.394164+02:00
+Command: python -m cProfile -s time profiler.py
+
+         8 function calls in 7.704 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    5.701    5.701    5.701    5.701 profiler.py:20(memory_intensive_function)
+        1    2.000    2.000    2.000    2.000 {built-in method time.sleep}
+        1    0.003    0.003    2.003    2.003 profiler.py:6(slow_function)
+        1    0.000    0.000    7.704    7.704 profiler.py:27(main)
+        1    0.000    0.000    7.704    7.704 profiler.py:1(<module>)
+        1    0.000    0.000    7.704    7.704 {built-in method builtins.exec}
+        1    0.000    0.000    0.000    0.000 profiler.py:14(optimized_fast_function)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+
+Exit code: 0
