@@ -43,14 +43,6 @@ Every image is saved directly in `lab9_Ali_Naji/evidence/` and embedded in the W
 
 The report's timing and memory tables use the values visible in these screenshots, recorded in `lab9_Ali_Naji/results/screenshot_measurements.json`. The text logs in `results/` are from earlier runs of the same code. `benchmark.json` records a separate repeated comparison using `timeit` without profiler tracing.
 
-## Clarifications to the handout
-
-The comment beside `return total` says that the return should not be indented. A Python return must remain inside its function. Here it is indented four spaces, aligned with the `for` statement, so it runs after the loop has finished. At the left margin it would cause `SyntaxError: 'return' outside function`; inside the loop it would stop after the first iteration.
-
-The sample memory test asserts that RSS must increase after `memory_intensive_function()`. That function uses `range` and a single accumulator, so it does not retain a list of squares and a permanent RSS increase is not guaranteed. The submitted tests record RSS before and after execution and verify the exact sum, `333333283333335000000`, instead of requiring an increase.
-
-The sample also requires the large loop to finish within five seconds. The submitted tests print whether that target was met, while correctness is checked separately because tracing overhead and system load affect elapsed time. Both captured test runs meet the target. The slow-function check uses at least two seconds to match `time.sleep(2)`, and the fast-function check retains the one-second limit. These test changes are discussed in the Word report.
-
 ## Running the code
 
 From the repository root, create an environment and install the pinned profiling packages:
